@@ -1,0 +1,59 @@
+ALGORITHM Dot product
+
+PROCEDURE dot_product( v1,v2 : ARRAY_OF INTEGER, ps:INTEGER )
+VAR
+    i: INTEGER ;
+    ps: 0 ;
+BEGIN
+    var l1:=v1.length-1;
+    var l2:=v2.length-1;
+    IF (l1=l2) THEN
+    FOR i FROM 0 TO l1 STEP 1 DO
+        ps=ps+(v1[i]*v2[j])
+    END_FOR
+        
+    ELSE
+      write("les deux vecteurs ne sont pas egaux")
+    END_IF
+    END
+
+    
+    // FUNCTION dot_product(v1,v2 : ARRAY_OF INTEGER, ps:INTEGER) : INTEGER
+    // VAR
+    //      i: INTEGER ;
+    //      ps: 0 ;
+    // BEGIN
+    //     var l1:=v1.length-1;
+    // var l2:=v2.length-1;
+    // IF (l1=l2) THEN
+    // FOR i FROM 0 TO l1 STEP 1 DO
+    //     ps=ps+(v1[i]*v2[j])
+    // END_FOR
+        
+    // ELSE
+    //   write("les deux vecteurs ne sont pas egaux")
+    // END_IF
+    //     RETURN ps ;
+    // END
+    
+ ALGORITHM DOT Product
+
+ VAR
+     ps:INTEGER
+     tab: ARRAY_OF array ;
+     n,i,j:INTEGER
+ BEGIN
+    // write ("doner le nombre de paire")
+    // read(n)
+    FOR i FROM 0 TO tab.length-1 STEP 1 DO
+      FOR j FROM 0 TO tab.length-1 STEP 1  DO
+      Dot_product(tab[i],tab[j],ps);
+      END_FOR
+    END_FOR
+    IF (ps=0) THEN
+        write("les deux vecteurs sont orthogonaux")
+    END_IF
+ END
+
+
+
